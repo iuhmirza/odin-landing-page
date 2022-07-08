@@ -1,0 +1,51 @@
+.header, .hero, .footer {
+    background: #1f2937;
+}
+
+.quote {
+    background: #e5e7eb;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, h1, h2, h3, ul, a {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+h2 {
+    color: #1f2937;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+h3 {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
