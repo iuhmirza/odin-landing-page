@@ -8,13 +8,20 @@
     font-style: italic;
     font-size: 36px;
     color: #1f2937;
+    text-align: center;
+    flex-direction: column;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body, h1, h2, h3, ul, a {
+body, h1, h2, h3, ul, a{
     margin: 0;
     font-family: "Roboto", sans-serif;
+}
+
+body > * {
+    padding: 32px;
 }
 
 h1 {
@@ -43,6 +50,8 @@ a {
 ul {
     list-style: none;
     display: flex;
+    gap: 18px;
+    padding: 0;
 }
 
 .header {
@@ -54,23 +63,80 @@ ul {
 .hero {
     display: flex;
     justify-content: center;
+    gap: 32px;
 }
 
 .info {
     display: flex;
-    gap: 24px;
+    gap: 32px;
     justify-content: center;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
-    border: 4px solid blue;
-    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 16px;
 }
 
 .quote, .call-to-action, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sign-up {
+    width: 400px;
+}
+
+.secondary {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.sign-up-button {
+    background-color: #3882f6;
+    border: none;
+    padding: 8px 32px;
+    color: white;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.info-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.quotee {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+.blob {
+    background-color: #3882f6;
+    display: flex;
+    padding: 32px;
+    gap: 32px;
+    color: white;
+    border-radius: 32px;
+}
+
+.blob .sign-up-button{
+    border: white solid 1px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    color: white;
 }
